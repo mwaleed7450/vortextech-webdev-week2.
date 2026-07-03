@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Week 2</title>
+  <!-- Google Fonts for a clean look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dark/light toggle button -->
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Muhammad Waleed</h1>
+      <p class="subtitle">Web Developer · Problem Solver</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at COMSATS University Islamabad, passionate about Web Development.
+        I build responsive and user-friendly web applications using HTML, CSS, JavaScript, PHP, Bootstrap, and jQuery.
+        My projects include:
+        - SpendSmart — a full-stack expense tracker web app with AI-powered financial advice
+        - Blockchain-Based Data Integrity System — built in Python to ensure data integrity
+        Strong foundation in Java (OOP), Data Structures, Python, and Computer Networking. Kaggle certified in Python.
+        Currently seeking internship or entry-level web development opportunities to apply my skills in a professional environment.
+        Let's connect and build something great!.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills (optional, to show structure) -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3 (Flexbox/Grid)</li>
+        <li>JavaScript (DOM, Events)</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form id="contact-form" novalidate>
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="submit-btn">Send Message</button>
+
+        <!-- Success message (hidden by default) -->
+        <div id="success-message" style="display: none;">
+          ✅ Your message was sent successfully!
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p> 2026 Muhammad Waleed · Week 2 Submission</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
